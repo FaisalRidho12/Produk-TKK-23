@@ -19,9 +19,6 @@ class Handphone extends Tablet {
         parent::__construct($merk, $camera, $memory);
         $this->handphone_baru = $handphone_baru;
     }
-    public function nambah_handphone(){
-        echo "<br>Foxconn merilis iphone 12 Pro Max";
-    }
     public function beli_handphone() {
         echo "Anda telah membeli handphone baru $this->handphone_baru";
     }
@@ -34,8 +31,6 @@ echo "<br>";
 $handphone = new Handphone("Apple",16, 256, "iPhone 12 Pro Max");
 echo "<h3>Informasi Handphone: </h3>";
 $handphone->infoperangkat();
-echo "<br>";
-$handphone->nambah_handphone();
 echo "<br>";
 $handphone->beli_handphone();
 ?>
